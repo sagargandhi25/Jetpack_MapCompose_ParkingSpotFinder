@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.test.jetpack_map_compose_parkingspotfinder.presentation.MapScreen
 import com.test.jetpack_map_compose_parkingspotfinder.ui.theme.Jetpack_Map_Compose_ParkingSpotFinderTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,22 +23,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    MapScreen()
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    Jetpack_Map_Compose_ParkingSpotFinderTheme {
-        Greeting("Android")
-    }
-}
