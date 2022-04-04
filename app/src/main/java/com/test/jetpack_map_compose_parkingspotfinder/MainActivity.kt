@@ -12,7 +12,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.test.jetpack_map_compose_parkingspotfinder.presentation.MapScreen
 import com.test.jetpack_map_compose_parkingspotfinder.ui.theme.Jetpack_Map_Compose_ParkingSpotFinderTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
